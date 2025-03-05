@@ -3,7 +3,9 @@ package com.example.medsewa
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
+import androidx.core.view.marginEnd
 import androidx.recyclerview.widget.RecyclerView
 import com.example.medsewa.DataClasses.Medecine
 import com.example.medsewa.databinding.MedicineCardViewBinding
@@ -44,7 +46,8 @@ class AdapterMed(private val medList: ArrayList<Medecine>): RecyclerView.Adapter
             for (i in 0 until medicine.numPills) {
                 val pill = ImageView(context)
                 pill.layoutParams = ViewGroup.LayoutParams(50, 50)
-
+//                val params = LinearLayout.LayoutParams(50, 50)
+//                params.setMargins(8, 8, 8, 8)
                 // Initially gray, turns green when taken
                 if (i < medicine.pillsTaken) {
                     pill.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.pill_active))

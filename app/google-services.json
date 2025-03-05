@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1074013831601",
+    "project_id": "medsewa-a1f17",
+    "storage_bucket": "medsewa-a1f17.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074013831601:android:33801075be1e8c82997d90",
+        "android_client_info": {
+          "package_name": "com.example.medsewa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0v7wVE-lJL0pqyatAVDTcefDh-35V1PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
