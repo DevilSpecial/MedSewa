@@ -46,7 +46,7 @@ class DoctorsListActivity : AppCompatActivity() {
     }
 
     private fun setupRecyclerView(doctors: List<Doctors>) {
-        val adapter = AdapterBooking(doctors as ArrayList<Doctors>)
+        val adapter = AdapterBooking(this, doctors as ArrayList<Doctors>)
         binding.recyclerView.layoutManager= LinearLayoutManager(this)
         binding.recyclerView.adapter=adapter
     }

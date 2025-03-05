@@ -72,7 +72,7 @@ class AppointmentFragment : Fragment() {
         builder.show()
     }
     private fun setupRecyclerView(doctors: List<Doctors>) {
-        val adapter = AdapterDoctors(doctors as ArrayList<Doctors>)
+        val adapter = AdapterDoctors(requireContext(),doctors as ArrayList<Doctors>)
         binding.recyclerView.layoutManager=LinearLayoutManager(requireContext())
         binding.recyclerView.adapter=adapter
     }
